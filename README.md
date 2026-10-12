@@ -1,7 +1,9 @@
 # Xiuxian-Web · 岭行网页版
 
+远程：https://github.com/LiangchenLab/Xiuxian-Web
+
 **本仓库只放网页版**（Phaser HTML5 / 放置沙盒）。  
-客户端（Godot）在独立仓：[`LiangchenLab/Game-Godot`](https://github.com/LiangchenLab/Game-Godot)。
+客户端（Godot）在独立仓：https://github.com/LiangchenLab/Game-Godot
 
 对齐语雀：[AI开发游戏保姆级教程](https://www.yuque.com/zeejk/kt12r4/moryiawbo9ftweqv?singleDoc)
 
