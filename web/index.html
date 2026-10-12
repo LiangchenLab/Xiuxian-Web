@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#070d12" />
+  <title>岭行 · 修仙</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay" id="overlay"><span id="overlayText">突破</span></div>
+  <div class="float-layer" id="floatLayer"></div>
+
+  <div class="app">
+    <header class="frame header">
+      <img class="hero-thumb" id="hero" src="../assets/ai/hero.png" alt="修士" />
+      <div class="header-mid">
+        <div class="seal" id="title">岭行</div>
+        <h1 class="title">修仙</h1>
+        <p class="subtitle" id="subtitle">凡尘问道 · 一念成仙</p>
+      </div>
+      <div class="player" id="playerName" title="点此改道号">无名散修</div>
+    </header>
+
+    <section class="frame realm-card" id="realmCard">
+      <div class="realm-name" id="realm">炼气</div>
+      <div class="realm-desc" id="realmDesc">引气入体，初窥门径。</div>
+      <div class="meta-row">
+        <span id="qiText">灵气 0 / 100</span>
+        <span id="stoneText">灵石 20</span>
+      </div>
+      <div class="meta-row">
+        <span id="techText">吐纳术 ×1.00</span>
+        <span id="failHint">突破失败率约 7%</span>
+      </div>
+      <div class="bar-wrap"><div class="bar" id="bar"></div></div>
+    </section>
+
+    <div class="actions">
+      <button type="button" class="btn btn-primary" id="btnTrain">闭关修炼</button>
+      <button type="button" class="btn btn-secondary" id="btnBreak" disabled>突破</button>
+    </div>
+    <div class="actions-sub">
+      <button type="button" class="btn btn-ghost" id="btnAdventure">下山奇遇</button>
+      <button type="button" class="btn btn-ghost on" id="btnAuto">挂机：开</button>
+    </div>
+
+    <nav class="tabs" aria-label="分区">
+      <button type="button" data-tab="train" class="active">修炼</button>
+      <button type="button" data-tab="tech">功法</button>
+      <button type="button" data-tab="pill">丹药</button>
+      <button type="button" data-tab="log">记事</button>
+    </nav>
+
+    <section class="frame panel" id="panel-train">
+      <div class="panel-title">岭上要诀</div>
+      <div class="log">
+        <p>点「闭关修炼」攒灵气；满条后「突破」晋升境界。</p>
+        <p>挂机每秒自动吐纳；关掉窗口也会结算一段离线收益。</p>
+        <p>「下山奇遇」耗灵石，可能得福也可能栽跟头。</p>
+        <p>功法与丹药在对应页签；点右上角可改道号。</p>
+      </div>
+    </section>
+
+    <section class="frame panel hidden" id="panel-tech">
+      <div class="panel-title">功法</div>
+      <div class="list" id="techList"></div>
+    </section>
+
+    <section class="frame panel hidden" id="panel-pill">
+      <div class="panel-title">丹药（灵石购服）</div>
+      <div class="list" id="pillList"></div>
+    </section>
+
+    <section class="frame panel hidden" id="panel-log">
+      <div class="panel-title">仙山记事</div>
+      <div class="log" id="log"></div>
+    </section>
+
+    <div class="footer">
+      <span id="stats">闭关 0 · 突破 0 · 奇遇 0</span>
+      <button type="button" id="btnReset">重置存档</button>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

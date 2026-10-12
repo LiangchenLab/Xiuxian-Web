@@ -1,0 +1,11 @@
+【日常迭代——复制整段发给 Cursor Agent】
+
+仓库：E:\cw\Xiuxian-Game
+规则：按 .cursor/rules 与 docs/01，我不开代码，你直接改 web。
+
+本轮需求：
+1）……
+2）……
+
+验收：刷新 index.html 能立刻感到变化。
+不要问我要不要建文件，直接做。
